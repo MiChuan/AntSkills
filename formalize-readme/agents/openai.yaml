@@ -1,0 +1,4 @@
+interface:
+  display_name: "README 正式化改写"
+  short_description: "把项目 README 改写为正式开源项目风格的标准文档"
+  default_prompt: "使用 $formalize-readme 将项目 README 优化为正式的开源项目表述"
