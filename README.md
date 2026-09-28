@@ -1,6 +1,6 @@
 # AntSkills — AI Agent 技能集合
 
-[![Skills](https://img.shields.io/badge/Skills-43-4a90d9.svg)](https://github.com/MiChuan/AntSkills)
+[![Skills](https://img.shields.io/badge/Skills-44-4a90d9.svg)](https://github.com/MiChuan/AntSkills)
 [![Format](https://img.shields.io/badge/Format-SKILL.md-181717.svg)](https://agentskills.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/MiChuan/AntSkills?style=social)](https://github.com/MiChuan/AntSkills/stargazers)
@@ -21,9 +21,9 @@
 <a id="introduction"></a>
 ## 项目简介
 
-AntSkills 是一个 AI Agent 技能（Skill）集合仓库，收录 **43 个技能**，覆盖文档优化、工程实践、软件工程工作流与 Cursor 平台自动化等场景。每个技能均为独立目录，遵循 SKILL.md 标准组织，可复制到 Cursor（`.cursor/skills`）、Codex（`~/.codex/skills`）等支持 Agent Skills 的环境中直接使用。
+AntSkills 是一个 AI Agent 技能（Skill）集合仓库，收录 **44 个技能**，覆盖文档优化、照片出片、工程实践、软件工程工作流与 Cursor 平台自动化等场景。每个技能均为独立目录，遵循 SKILL.md 标准组织，可复制到 Cursor（`.cursor/skills`）、Codex（`~/.codex/skills`）等支持 Agent Skills 的环境中直接使用。
 
-技能按来源分为四类：自研文档技能（formalize-readme）、工程实践技能（7）、Superpowers 开源工作流（15）与 Cursor 官方技能（20）。
+技能按来源分为五类：自研文档技能（formalize-readme）、照片出片技能（gpt-image-photo-plays）、工程实践技能（7）、Superpowers 开源工作流（15）与 Cursor 官方技能（20）。
 
 <a id="highlights"></a>
 ## 项目亮点
@@ -32,6 +32,7 @@ AntSkills 是一个 AI Agent 技能（Skill）集合仓库，收录 **43 个技�
 - **覆盖完整工作流**：从需求探索、计划编写、测试驱动开发、代码评审到文档交付，形成闭环
 - **官方技能内置**：收录 Cursor 官方 20 个技能与 Superpowers 15 个工作流技能，开箱即用
 - **文档友好**：内置 README 正式化改写技能，可直接用于项目文档优化
+- **照片出片**：内置 GPT-Image 2.5 的十二条局部编辑玩法，提示词可按槽位套用
 - **轻量可裁剪**：每个技能独立目录，按需复制即可，无全局依赖
 
 <a id="features"></a>
@@ -40,6 +41,10 @@ AntSkills 是一个 AI Agent 技能（Skill）集合仓库，收录 **43 个技�
 ### README 与文档
 
 - **formalize-readme** — 将项目 README 改写为正式开源项目表述：徽章、锚点目录、标准章节，写作前核查仓库事实，交付前校验锚点与文件一致性
+
+### 照片出片
+
+- **gpt-image-photo-plays** — 用 GPT-Image 2.5 对照片做局部精确编辑：消除背景游客、调光、自然美颜、拍立得 3D 公仔、景点明信片、主体贴纸、行李箱拼贴、旅行海报、演唱会氛围、美食飞溅、文字涂鸦与 ins 风注释。提示词整理自卡兹克、AIZ小朱的公众号文章，槽位以外的约束句保持原文
 
 ### 工程实践
 
@@ -97,7 +102,7 @@ AntSkills 是一个 AI Agent 技能（Skill）集合仓库，收录 **43 个技�
 
 ```text
 AntSkills/
-├── <skill-name>/          # 43 个技能目录，每个包含 SKILL.md 及可选的
+├── <skill-name>/          # 44 个技能目录，每个包含 SKILL.md 及可选的
 │                          #   agents/（界面元数据）、references/、scripts/ 等
 ├── LICENSE                # MIT 许可证
 └── README.md              # 项目说明（本文件）
@@ -149,6 +154,10 @@ Superpowers 工作流技能可能需要对应的工具链（如 git、gh 等）�
 
 定期 `git pull` 获取最新内容，或按需仅复制更新的单个技能目录。
 
+### 5. gpt-image-photo-plays 的提示词能改写吗
+
+约束句保持原文，只替换 `gpt-image-photo-plays/references/prompts.md` 里标明的槽位（城市、物体、张数、颜色、英文单词）。该技能面向 GPT-Image 2.5，在 ChatGPT 中通过「创建图像」使用。
+
 <a id="open-source-statement--copyright"></a>
 ## 开源声明与版权归属
 
@@ -156,9 +165,11 @@ Superpowers 工作流技能可能需要对应的工具链（如 git、gh 等）�
 
 仓库内技能版权归其各自作者所有：Superpowers 技能来自开源项目，Cursor 官方技能来自 Cursor 官方发布，使用或再分发时请遵守对应来源的许可与署名要求。
 
+`gpt-image-photo-plays` 的提示词整理自卡兹克、AIZ小朱的文章《我整理了GPT-Image 2.5的12种玩法，希望能承包你的整个假期朋友圈。》（https://mp.weixin.qq.com/s/WeWYRyyAJtdPrErIV7063A）。技能中保留提示词原文并注明出处，文章正文版权归原作者所有。
+
 <a id="notes"></a>
 ## 其他说明
 
-- 技能来源：自研文档技能（1）、工程实践技能（7）、Superpowers 开源工作流（15）、Cursor 官方技能（20）。
+- 技能来源：自研文档技能（1）、照片出片技能（1）、工程实践技能（7）、Superpowers 开源工作流（15）、Cursor 官方技能（20）。
 - 部分技能保留 Cursor 平台专用 frontmatter 字段，未做改动，以保证在 Cursor 中的原始行为。
 - 各技能目录内附带的 `agents/`、`references/`、`scripts/` 等文件为技能运行所需资源，请随目录一并复制。

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GPT-Image 2.5 出片"
+  short_description: "用十二条照片玩法做局部精确编辑：去游客、调光、美颜、明信片、贴纸与氛围大片"
+  default_prompt: "使用 $gpt-image-photo-plays，按我的照片选一个出片玩法并给出可直接粘贴的提示词。"
